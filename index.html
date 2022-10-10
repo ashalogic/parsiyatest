@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <!-- <title>IFrame</title> -->
 </head>
 
 <body>
@@ -10,11 +9,8 @@
         src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="loading">
 </body>
-
-
 <script>
-    // alert(window.location.hash)
-    document.getElementById("imageToShow").src = window.location.hash;
+    document.getElementById("imageToShow").src = window.location.hash.slice(1);
 </script>
 
 </html>
