@@ -2,17 +2,19 @@
 <html>
 
 <head>
-    <title>IFrame</title>
+    <!-- <title>IFrame</title> -->
 </head>
 
 <body>
-    <img width="200px" id="imageToShow" src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="loading">
+    <img width="200px" id="imageToShow"
+        src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="loading">
 </body>
 
 
 <script>
-    alert(window.location.hash)
-    // document.getElementById("imageToShow").src = window.location.hash;
+    // alert(window.location.hash)
+    document.getElementById("imageToShow").src = window.location.hash;
 </script>
 
 </html>
