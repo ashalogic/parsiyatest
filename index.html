@@ -7,10 +7,12 @@
 </head>
 
 <body style="margin: 0px; height: 100%">
-    <img id="imageToShow" src="" style="height: auto;width: 100%;object-fit: contain;" />
+    <!-- <img id="imageToShow" src="" style="height: auto;width: 100%;object-fit: contain;" /> -->
+    <div id="imageToShow"
+        style="height:100%; width: 100%;background-position: center;background-image: url('');background-size: cover; background-repeat: no-repeat;">
 </body>
 <script>
-    document.getElementById("imageToShow").src = window.location.hash.slice(1);
+    document.getElementById("imageToShow").src = `url('${window.location.hash.slice(1)}')`;
 </script>
 
 </html>
