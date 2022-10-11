@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
+
 <head>
     <meta name="viewport" content="width=device-width, minimum-scale=0.1">
     <title>NoSelection.PNG (1359×767)</title>
@@ -7,12 +8,12 @@
 
 <body style="margin: 0px; height: 100%">
 
-    <img id="imageToShow"
-        src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        style="max-width: 100%; height: auto;object-fit: scale-down;">
+    <div
+    id="imageToShow"
+        style="height:100%; width: 100%;background-position: center;background-image: url('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size: cover; background-repeat: no-repeat;">
 </body>
 <script>
-    document.getElementById("imageToShow").src = window.location.hash.slice(1);
+    document.getElementById("imageToShow").style.backgroundImage = window.location.hash.slice(1);
 </script>
 
 </html>
