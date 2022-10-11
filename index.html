@@ -7,13 +7,10 @@
 </head>
 
 <body style="margin: 0px; height: 100%">
-
-    <div
-    id="imageToShow"
-        style="height:100%; width: 100%;background-position: center;background-image: url('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');background-size: cover; background-repeat: no-repeat;">
+    <img id="imageToShow" src="" style="height: auto;width: 100%;object-fit: contain;" />
 </body>
 <script>
-    document.getElementById("imageToShow").style.backgroundImage = window.location.hash.slice(1);
+    document.getElementById("imageToShow").src = window.location.hash.slice(1);
 </script>
 
 </html>
